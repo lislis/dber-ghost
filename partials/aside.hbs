@@ -1,0 +1,12 @@
+<aside>
+    <div class="col-md-3">
+        <div class="aside-latest">
+            {{#get "posts" id="4"}}
+		{{#foreach posts}}
+	
+		  {{content}}
+		{{/foreach}}
+            {{/get}}
+        </div>
+    </div>
+</aside>
