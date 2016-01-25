@@ -2,55 +2,43 @@
 <html>
 <head>
    <meta charset="utf-8">
-   
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="description" content="{{meta_description}}" />
 
-
    <title>{{meta_title}}</title>
-   
-   <link rel="stylesheet" href="{{asset "css/bootstrap.min.css"}}">
+   <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
    <link rel="stylesheet" href="{{asset "css/screen.css"}}">
-   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
-   
     <!--[if lt IE 9]>
             <script src="{{asset "js/html5shiv.js"}}"></script>
     <![endif]-->
-   
-   
     {{ghost_head}}
 </head>
 <body>
-    <header>
-    <nav class="navbar navbar-default">
-        <div class="container">
-            <div class="row">
-                <div class="navbar-header">
-                    <h1><a class="navbar-brand" href="/">{{@blog.title}}</a></h1>
-                    <h2>{{@blog.description}}</h2>
-                </div>
-            </div>
-        </div>
-    </nav>   
+  <div>
+    <header class="header">
+      <div class="inner">
+        <h1><a href="/" title="home">{{@blog.title}}</a></h1>
+        <h2>{{@blog.description}}</h2>
+      </div>
     </header>
-    <div class="container" id="article-container">
-        <div class="row">
-            {{{body}}}
-        </div>
-    </div>    
-    <footer class="col-md-12 footer">
-        <div class="container">
-            <div class="row">
-                <a href="/impressum" title="Impressum">Impressum</a>
-		<a href="http://berlincodeofconduct.org" title="Berlin Code of Conduct">Code of Conduct</a>
-		<span id="setDate"></span>
-            </div>
-        </div>
+    <main class="content">
+      <div class="inner">
+        {{{body}}}
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="inner">
+        <ul class="footer-links">
+          <li><a href="/impressum" title="Impressum">Impressum</a></li>
+          <li><a href="http://berlincodeofconduct.org" title="Berlin Code of Conduct">Code of Conduct</a></li>
+          <li><span id="setDate"></span></li>
+        </ul>
+      </div>
     </footer>
-    
-    <script type="text/javascript">
+     <script type="text/javascript">
         var getDate = new Date();
-        document.getElementById('setDate').innerHTML = '&copy;' + getDate.getFullYear();
+        document.getElementById('setDate').innerHTML = '&copy; ' + getDate.getFullYear();
     </script>
+  </div>
 </body>
 </html>

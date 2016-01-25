@@ -1,20 +1,10 @@
 {
-  "name": "TrueStyle",
-  "version": "1.0.1",
+  "name": "dber",
+  "version": "0.0.1",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Zazama/TrueStyle"
+    "url": "https://github.com/lislis/dber-ghost"
   },
-  "keywords": [
-    "ghost",
-    "theme",
-    "bootstrap",
-    "responsive",
-    "TrueStyle"
-  ],
-  "author": "Jan Metzger <jan.metzger@gmx.net>",
-  "bugs": {
-    "url": "https://github.com/Zazama/TrueStyle/issues"
-  },
-  "homepage": "https://github.com/Zazama/TrueStyle"
+  "keywords": [],
+  "author": "Lisa P <mail@lislis.de>"
 }
