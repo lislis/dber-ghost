@@ -90,7 +90,7 @@ a:focus {
         flex-flow: row-reverse wrap;
     }
 
-    .content .inner > div {
+    .content .container {
         -webkit-flex: 0 0 63%;
         flex: 0 0 63%;
     }
